@@ -1,13 +1,119 @@
-body {
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+body {
+  max-width: 100%;
+}
+.App {
+  font-family: "Lato", sans-serif;
+  padding: 20px;
+  max-width: 700px;
+}
+
+.flex {
+  display: flex;
+  flex-direction: row;
+}
+
+.pl-20 {
+  padding-left: 20px;
+}
+
+.mt-20 {
+  margin-top: 20px;
+}
+
+.p-20 {
+  padding: 20px;
+}
+
+input {
+  border: 2px solid rgb(132 204 22);
+  border-radius: 10px;
+  outline: none; 
+  background:rgb(236 252 203);
+}
+
+.button {
+  background-color: rgb(236 252 203);
+  border: 1px solid rgb(77 124 15);
+  border-radius: 8px;
+  box-sizing: border-box;
+  color: rgb(77 124 15);
+  cursor: pointer;
+  display: inline-block;
+  font-family: Circular, -apple-system, BlinkMacSystemFont, Roboto,
+    "Helvetica Neue", sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 20px;
+  margin: 0;
+  outline: none;
+  padding: 3px 15px;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  touch-action: manipulation;
+  transition: box-shadow 0.2s, -ms-transform 0.1s, -webkit-transform 0.1s,
+    transform 0.1s;
+  user-select: none;
+  -webkit-user-select: none;
+  width: auto;
+  margin-left: 20px;
+}
+
+.button:focus-visible {
+  box-shadow: rgb(26 46 5) 0 0 0 2px, rgba(255, 255, 255, 0.8) 0 0 0 4px;
+  transition: box-shadow 0.2s;
+}
+
+.button:active {
+  background-color: rgb(163 230 53);
+  border-color: rgb(163 230 53);
+  transform: scale(0.96);
+}
+
+.button:disabled {
+  border-color: #dddddd;
+  color: #dddddd;
+  cursor: not-allowed;
+  opacity: 1;
+}
+
+.card {
+  color: "white";
+  border-radius: 30px;
+  background: #83a4d4; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #b6fbff,
+    #83a4d4
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    
+    #37be4936,
+    #1e8309a4
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.audio {
+  cursor: pointer;
+  border-radius: 200px;
+  border: 1px solid rgb(77 124 15);
+  width: 100px;
+  text-align: center;
+}
+
+.audio:hover {
+  background-color:  rgb(77 124 15);
+  color: white;
+  border: none;
 }
