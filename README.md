@@ -18,7 +18,7 @@ diff
 - (That project upload for seeing my self-improvement ) ! 
 
 
-## If you want to see my project <a href="beyzaarslanturk-react-dictionary-app.netlify.app">Click Here!</a> 
+## If you want to see my project <a href="https://beyzaarslanturk-react-dictionary-app.netlify.app">Click Here!</a> 
 
 ![alt text](https://github.com/beyzaarslanturk/React-Dictionary-App/blob/master/dictionary-app.png)
 
